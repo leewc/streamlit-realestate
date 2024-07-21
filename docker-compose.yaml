@@ -1,0 +1,25 @@
+services:
+  streamlit-realestate:
+    container_name: streamlit-realestate
+    image: streamlit-realestate
+    build:
+      dockerfile: ./Dockerfile
+    networks:
+      - web
+    restart: unless-stopped
+    labels:
+          - traefik.enable=true
+          - traefik.http.routers.streamlitre.rule=(Host(`realestate.sjc.leewc.com`))
+          - traefik.http.middlewares.csrf.headers.hostsProxyHeaders=["X-CSRFToken"]
+          - traefik.http.routers.streamlitre.entrypoints=websecure
+          - traefik.http.routers.streamlitre.tls=true
+          - traefik.http.routers.streamlitre.service=streamlitre
+          - traefik.http.services.streamlitre.loadBalancer.server.port=8501
+          - traefik.http.services.streamlitre.loadBalancer.healthCheck.path=/_stcore/health
+          - traefik.http.services.streamlitre.loadBalancer.healthCheck.interval=10s
+          - traefik.http.services.streamlitre.loadBalancer.healthCheck.timeout=5s
+
+networks:
+  # Connect to traefik `docker network create web`
+  web:
+    external: true

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "streamlit_realestate"
+version = "0.1.0"
+description = "Streamlit app for data analysis using homeharvest library"
+authors = ["Wen Chuan Lee <mail@leewc.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.11, <3.13"
+streamlit = "^1.35.0"
+homeharvest = "^0.3.30"
+pandas = "^2.2.2"
+plotly = "^5.22.0"
+colorhash = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
