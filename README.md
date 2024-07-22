@@ -12,10 +12,9 @@ Video Demo
 
 [streamlit-re-demo.webm](https://github.com/user-attachments/assets/dd33cdc3-b8cb-4cc7-a99e-0efbc039e32f)
 
-
 ## Without Docker
 
-Running without docker is as simple as `poetry install`, activating the env, and then `streamlit run streamlit_realestate/re.py`. Tested on Python 3.11.
+Running without docker is as simple as `poetry install`, activating the env with `poetry shell`, and then `streamlit run streamlit_realestate/re.py`. Tested on Python 3.11.
 
 ## With Docker
 
