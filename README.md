@@ -4,7 +4,9 @@ The (admittedly ugly) code is in `re.py`, and the data is fetched from Realtor.c
 
 ## Demo
 
-Demo is hosted at https://realestate.sjc.leewc.com/ (might be down at anytime, I make no guarantees of this proof of concept being available).
+Demo is hosted at:
+- Streamlit community cloud: https://realestateviz.streamlit.app/
+- Self hosted: https://realestate.sjc.leewc.com/ (might be down at anytime, I make no guarantees of this proof of concept being available).
 
 Video Demo
 
