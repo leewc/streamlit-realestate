@@ -2,10 +2,14 @@ This is a proof of concept where I learnt how to use Poetry to manage dependenci
 
 The (admittedly ugly) code is in `re.py`, and the data is fetched from Realtor.com via the intuitive [Homeharvest library](https://github.com/Bunsly/HomeHarvest) provided by Bunsly to scrape data.
 
-
 ## Demo
 
 Demo is hosted at https://realestate.sjc.leewc.com/ (might be down at anytime, I make no guarantees of this proof of concept being available).
+
+Video Demo
+
+[streamlit-re-demo.webm](https://github.com/user-attachments/assets/dd33cdc3-b8cb-4cc7-a99e-0efbc039e32f)
+
 
 ## Without Docker
 
